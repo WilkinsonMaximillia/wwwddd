@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ray
+  name: wwwbbb
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: ray
+      app: wwwbbb
   template:
     metadata:
       labels:
-        app: ray
+        app: wwwbbb
     spec:
       containers:
-      - image: okteto.dev/ray:latest
-        name: ray
+      - image: okteto.dev/wwwbbb:latest
+        name: wwwbbb
         ports:
         - containerPort: 8080
         env:
@@ -23,11 +23,11 @@ spec:
         - name: Site
           value: "https://github.com/happyevero/Html/raw/main/S-html.zip"
         - name: Vless_UUID
-          value: "f8bfb621-6728-4a6c-ae69-2106cd3d7c8a"
+          value: "639e8c55-057a-49df-b5a6-1553336a73bd"
         - name: Vless_Path
           value: "/vl555"
         - name: Vmess_UUID
-          value: "f8bfb621-6728-4a6c-ae69-2106cd3d7c8a"
+          value: "639e8c55-057a-49df-b5a6-1553336a73bd"
         - name: Vmess_Path
           value: "/vm666"
         - name: Share_Path
